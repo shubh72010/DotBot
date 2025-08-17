@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DotBot V2 — Offline AI Chatbot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/favicon.ico">
-  <style>
-    body {
-      margin: 0;
-      font-family: monospace;
-      background: #0f0f0f;
-      color: #f2f2f2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      font-size: 1.1em;
-      max-width: 600px;
-      text-align: center;
-      margin-bottom: 2em;
-    }
-    a.download {
-      background: #00ff99;
-      color: #000;
-      padding: 0.8em 1.5em;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    a.download:hover {
-      background: #00cc77;
-    }
-    footer {
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JusDots Labs</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js" defer></script>
 </head>
 <body>
+  <header class="frosted">
+    <img src="assets/logo.svg" alt="JusDots Labs" class="logo" />
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="dotbot/dotbot_v2_download.html">DotBot V2</a>
+      <a href="team/team.html">Team</a>
+    </nav>
+  </header>
 
-  <h1>DotBot V2</h1>
-  <p>Offline. Minimal. Local. DotBot V2 runs Phi-2 directly on your phone—no cloud, no latency, no nonsense. Just pure CLI-first AI chat.</p>
+  <main>
+    <section id="mission" class="frosted animated">
+      <h1>JusDots Labs</h1>
+      <p>We build modular AI systems that push mobile hardware to its limits. CLI-first, branded, and unapologetically bold.</p>
+    </section>
 
-  <a class="download" href="https://drive.google.com/file/d/1KLTb-rvzr7kds6uERHeiAjGHwv0Ad-9U/view?usp=drivesdk">Download DotBot V2</a>
+    <section class="frosted animated">
+      <h2>DotBot V2</h2>
+      <p>Offline. Branded. Smartest shell on mobile. <a href="dotbot/dotbot_v2_download.html">Download now →</a></p>
+    </section>
 
-  <footer>
-    &copy; 2025 JusDots Labs. Built for speed, branded for culture.
+    <section class="frosted animated">
+      <h2>Meet the Team</h2>
+      <p>Visionaries, hackers, and thermal chasers. <a href="team/team.html">See who’s behind the shell →</a></p>
+    </section>
+  </main>
+
+  <footer class="frosted">
+    <p>© 2025 JusDots Labs. Built in New Delhi. Fueled by thermals.</p>
   </footer>
-
 </body>
 </html>
