@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  background: #0f0f0f;
+  color: #e0e0e0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #00ffe0;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 1.5em;
+  color: #00ffe0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+section {
+  padding: 2em;
+  border-radius: 12px;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(0, 255, 224, 0.1);
+  border: 1px solid rgba(0, 255, 224, 0.2);
+}
+
+section h1, section h2 {
+  color: #00ffe0;
+}
+
+section a {
+  color: #00bfa5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  border-top: 1px solid #00ffe0;
+}
+
+.animated {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
