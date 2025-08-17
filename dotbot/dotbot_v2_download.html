@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DotBot V2 Download</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    main {
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .download {
+      padding: 2em;
+      border-radius: 12px;
+      background: rgba(20, 20, 20, 0.7);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.1);
+      border: 1px solid rgba(0, 255, 224, 0.2);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .download h3 {
+      margin-top: 0;
+      font-size: 1.6em;
+      color: #00ffe0;
+    }
+
+    .download p {
+      font-size: 1em;
+      line-height: 1.4;
+      margin-bottom: 1.2em;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 0.6em 1.2em;
+      background: #00ffe0;
+      color: #0a0a0a;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0, 255, 224, 0.3);
+      transition: background 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background: #00bfa5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="download">
+      <h3>Download DotBot V2</h3>
+      <p>Get the full build from our Drive. Includes launcher scripts, patched binaries, and folder scaffold.</p>
+      <a href="https://drive.google.com/file/d/1KLTb-rvzr7kds6uERHeiAjGHwv0Ad-9U/view?usp=drivesdk" target="_blank" class="download-btn">
+        ⬇️ dotbot_v2.zip
+      </a>
+    </section>
+  </main>
+</body>
+</html>
