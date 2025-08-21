@@ -1,42 +1,50 @@
 body {
-  background-color: #0f0f0f;
-  color: #e0e0e0;
-  font-family: 'JetBrains Mono', monospace;
   margin: 0;
   padding: 0;
-}
-
-header {
-  text-align: center;
-  padding: 2rem;
-  border-bottom: 1px solid #333;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #00ffd5;
-}
-
-.phones {
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+  font-family: 'JetBrains Mono', monospace;
+  color: #e0e0e0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
   padding: 2rem;
 }
 
-.phone {
+.card {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 255, 213, 0.1);
   text-align: center;
-  max-width: 400px;
+  transition: transform 0.3s ease;
 }
 
-.phone img {
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
   width: 100%;
-  border: 1px solid #333;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.8rem;
-  color: #777;
+.card h2 {
+  color: #00ffd5;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ccc;
 }
