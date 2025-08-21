@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DotBot™ Devices</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DotBot™</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #fafafa url('assets/dot-grid.png') repeat; }
+    .frosted { backdrop-filter: blur(12px); background: rgba(255,255,255,0.6); }
+    .dotfont { font-family: "DotGothic16", sans-serif; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="wrapper">
-    <div class="card">
-      <img src="assets/ph2.png" alt="Nothing Phone 2" />
-      <h2>DotBot™ for Nothing Phone 2</h2>
-      <p>Mistral-7B Q4_K_M<br>Thermal-aware shell logic<br>CLI-first UX</p>
-    </div>
+<body class="text-black">
 
-    <div class="card">
-      <img src="assets/ph2a.png" alt="Nothing Phone 2a" />
-      <h2>DotBot™ for Nothing Phone 2a</h2>
-      <p>Dimensity-optimized<br>Persona-injected logic<br>Silent-mode toggles</p>
-    </div>
-  </div>
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full flex justify-between items-center frosted px-6 py-4 shadow-md z-50">
+    <h1 class="dotfont text-xl tracking-wider">DOTBOT™</h1>
+  </nav>
+
+  <!-- Phone 2 -->
+  <section class="flex flex-col items-center justify-center min-h-screen gap-6 pt-20">
+    <h2 class="dotfont text-3xl tracking-widest">Phone (2)</h2>
+    <a href="phone2.html">
+      <img src="assets/ph2.png" alt="Phone 2" class="max-w-xs rounded-2xl shadow-xl hover:scale-105 transition">
+    </a>
+    <a href="phone2.html" class="dotfont px-6 py-2 rounded-xl frosted shadow hover:bg-white/80 transition">
+      View Downloads →
+    </a>
+  </section>
+
+  <!-- Phone 2a -->
+  <section class="flex flex-col items-center justify-center min-h-screen gap-6">
+    <h2 class="dotfont text-3xl tracking-widest">Phone (2a)</h2>
+    <a href="phone2a.html">
+      <img src="assets/ph2a.png" alt="Phone 2a" class="max-w-xs rounded-2xl shadow-xl hover:scale-105 transition">
+    </a>
+    <a href="phone2a.html" class="dotfont px-6 py-2 rounded-xl frosted shadow hover:bg-white/80 transition">
+      View Downloads →
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="frosted text-center py-6 mt-12">
+    <p class="dotfont text-sm">&copy; 2025 DotBot™ Project</p>
+  </footer>
+
 </body>
 </html>
