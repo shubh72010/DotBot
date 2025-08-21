@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DotBot™</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DotBot™ Frosted UI</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+      font-family: 'Segoe UI', sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .frosted-panel {
+      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(0, 255, 213, 0.1);
+      text-align: center;
+    }
+
+    .frosted-panel h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #00ffd5;
+      text-shadow: 0 0 2px #000;
+    }
+
+    .frosted-panel p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #ccc;
+    }
+
+    .frosted-panel img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .frosted-panel img:hover {
+      transform: scale(1.02);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>DOTBOT™</h1>
-    <p>Mobile-first. Shell-native. Sovereign AI.</p>
-  </header>
-
-  <section class="phones">
-    <div class="phone">
-      <img src="assets/ph2.png" alt="Nothing Phone 2">
-      <h2>DotBot™ on Phone 2</h2>
-      <p>Mistral-7B Q4_K_M, thermal-aware shell logic, CLI-first UX.</p>
-    </div>
-
-    <div class="phone">
-      <img src="assets/ph2a.png" alt="Nothing Phone 2a">
-      <h2>DotBot™ 2a</h2>
-      <p>Dimensity-optimized, persona-injected, silent-mode toggles.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 JusDots Labs</p>
-  </footer>
+  <div class="frosted-panel">
+    <h1>DotBot™ Shell</h1>
+    <p>Running <code>dotbot --persona folius</code><br>Thermal-aware. Authority-weighted. Minimal.</p>
+    <img src="ph2.png" alt="DotBot UI Preview" />
+  </div>
 </body>
 </html>
